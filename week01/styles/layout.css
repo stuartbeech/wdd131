@@ -30,17 +30,17 @@ main {
     background-color: #eee;
 }
 
-.grid-layout {
+.grid {
     display: grid;
     height: 100vh;
     grid-template: 2fr 1fr / 2fr 1fr;
 }
 
-.main-layout {
+.grid-main {
     grid-column: 1 / 2;
 }
 
-.aside-layout {
+.grid-aside {
     grid-column: 2 / 3;
 }
 
