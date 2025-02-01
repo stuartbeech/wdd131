@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temple Album</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<meta name="description" content="Temple Album - Home Page">
+	<meta name="author" content="Stuart Beech">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="styles/filtered-temples.css">
+	<link rel="stylesheet" href="styles/filtered-temples-large.css">
+	<script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="blue-header">
+			<div class="blue-sub">
+				<h1>Temple Album</h1>
+				<button id="menu" aria-label="Toggle Navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<nav>
+				<ul class="navigation">
+					<li><a href="#" id="home">Home</a></li>
+					<li><a href="#" id="old-temples">Old</a></li>
+					<li><a href="#" id="new-temples">New</a></li>
+					<li><a href="#" id="large-temples">Large</a></li>
+					<li><a href="#" id="small-temples">Small</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="page-container">
+		<main>
+			<h2>Home</h2>
+			<div class="temple-container" id="temple-cards">
+			</div>
+		</main>
+
+		<footer>
+			<p>&copy;<span id="currentYear"></span> 🐶 Stuart Beech 🐱 South Africa</p>
+			<p id="lastModified"></p>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.temple-container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+@media all and (min-width: 768px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.navigation {
+		display: flex;
+	}
+
+	.blue-header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.temples {
+		gap: 2rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#menu {
+		display: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	.temple-container {
+		gap: 2rem;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
