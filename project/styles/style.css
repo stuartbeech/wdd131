@@ -1,19 +1,23 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
     background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
     padding: 20px;
 }
 
 h1,
 h2 {
     color: #F9D20D;
-    /* Bright Yellow */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 h3 {
     color: #E74C3C;
-    /* Lego Red */
+    font-family: 'Bebas Neue', serif;
+    font-style: normal;
 }
 
 p {
@@ -24,17 +28,17 @@ p {
     margin-bottom: 20px;
 }
 
-.color-schema,
+/* .color-schema,
 .typography {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .wireframe {
+    background-color: #eaeaea;
     border: 1px dashed #333;
     padding: 10px;
     margin-top: 10px;
-    background-color: #eaeaea;
 }
 
 .wireframe img {
