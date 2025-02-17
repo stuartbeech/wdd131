@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery - Lego Build Zone</title>
+	<meta name="description" content="Lego Build Zone - Gallery Page">
+	<meta name="author" content="Stuart Beech">
+	<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="scripts/main.js" defer></script>
+	<script src="scripts/gallery.js" defer></script>
+</head>
+
+<body id="GalleryBody">
+	<header>
+		<div id="DesktopMenu">
+			<nav id="Navigation">
+				<div id="LogoDesktop">
+					<img src="images/lego-logo.svg" alt="Lego logo">
+				</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a class="active" href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="MobileMenu">
+			<div id="MobileHeader">
+				<div id="Hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<div id="LogoMobile">
+					<img src="images/lego-logo.svg" alt="Lego logo">
+				</div>
+			</div>
+
+			<div id="HeaderContent">
+				<div id="TopRow">
+					<h3>MENU</h3>
+					<p>X</p>
+				</div>
+
+				<div id="Button">
+					<a href="https://greatyellowbrick.co.za/pages/community-hub" target="_blank">COMMUNITY HUB</a>
+				</div>
+
+				<div id="MainMenu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a class="active" href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<h1>Browse our Lego Gallery!</h1>
+		<div class="image-caption">
+			<p>Welcome to the LEGO Build Zone Gallery! <br><br> Step into a world of extraordinary LEGO creations,
+				featuring iconic sets from the <strong>**Star Wars**</strong>, <strong>**Icons**</strong>, and
+				<strong>**Technic**</strong> collections. Explore meticulously crafted models from the galaxy far, far
+				away, intricate masterpieces that celebrate the elegance of architecture, and mind-blowing builds from
+				the world of **Technic**. Our gallery showcases the creativity and skill of LEGO enthusiasts who bring
+				these sets to life in ways you’ve never seen before. Our gallery has something for every LEGO fan.
+				Explore the unique details and craftsmanship that make these sets stand out and find the perfect one to
+				fuel your next big build!<br><br> Want to connect with fellow fans and share your passion for these
+				iconic sets?
+				<a href="contact.html" class="cta-button">Connect</a> with the community and celebrate the art of
+				building with LEGO!
+			</p>
+		</div>
+		<div class="filter-container">
+			<label id="CategoryFilterLabel" for="category-filter">Filter by theme:</label>
+			<select id="category-filter">
+				<option value="all">All</option>
+				<option value="Icons">Icons</option>
+				<option value="Starwars">Star Wars</option>
+				<option value="Technic">Technic</option>
+			</select>
+		</div>
+		<div id="gallery" class="gallery"></div>
+	</main>
+	<footer>
+		<p>&copy;<span id="currentYear"></span> 🐶 Stuart Beech 🐱 South Africa</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+
+</html>

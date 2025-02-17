@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us - Lego Build Zone</title>
+	<meta name="description" content="Lego Build Zone - Contact Us Page">
+	<meta name="author" content="Stuart Beech">
+	<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="scripts/main.js" defer></script>
+	<script src="scripts/contact.js" defer></script>
+</head>
+
+<body id="ContactBody">
+	<header>
+		<div id="DesktopMenu">
+			<nav id="Navigation">
+				<div id="LogoDesktop">
+					<img src="images/lego-logo.svg" alt="Lego logo">
+				</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a class="active" href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="MobileMenu">
+			<div id="MobileHeader">
+				<div id="Hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<div id="LogoMobile">
+					<img src="images/lego-logo.svg" alt="Lego logo">
+				</div>
+			</div>
+
+			<div id="HeaderContent">
+				<div id="TopRow">
+					<h3>MENU</h3>
+					<p>X</p>
+				</div>
+
+				<div id="Button">
+					<a href="https://greatyellowbrick.co.za/pages/community-hub" target="_blank">COMMUNITY HUB</a>
+				</div>
+
+				<div id="MainMenu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a class="active" href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<h1>Be Part of the LEGO Builder's World!</h1>
+		<div class="image-caption">
+			<p>Got questions or want to showcase your latest LEGO creation? We’d love to hear from you! Whether you've
+				just completed an epic <strong>**Star Wars**</strong> model, built an iconic landmark from the
+				<strong>**Icons**</strong> series, or tackled a challenging <strong>**Technic**</strong> set, this
+				community is the perfect place to share your passion. <br><br> Join fellow LEGO enthusiasts to
+				exchange ideas, ask for building tips, or show off your creations. Drop us a message and become part of
+				a global community of builders who are as excited about LEGO as you are!
+			</p>
+		</div>
+		<form id="contact-form">
+			<h2>Get in touch with us!</h2>
+			<div class="name-surname">
+				<div class="form-group">
+					<input type="text" id="name" name="name" placeholder="* Name" required>
+				</div>
+				<div class="form-group">
+					<input type="text" id="surname" name="surname" placeholder="* Surname" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="email" id="email" name="email" placeholder="* Email" required>
+			</div>
+			<div class="form-group">
+				<select id="topic" name="Topic" required>
+					<option value="" disabled selected>* Choose a topic ...</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<textarea id="message" name="message" rows="4" placeholder="* Message" required></textarea>
+			</div>
+			<button type="submit">Send Your Brick</button>
+		</form>
+		<div id="popup-overlay" class="popup-overlay"></div>
+		<div id="popup" class="popup">
+			<h3>Form Submitted!</h3>
+			<p id="popupContent"></p>
+			<button onclick="closePopup()">Close</button>
+		</div>
+	</main>
+	<footer>
+		<p>&copy;<span id="currentYear"></span> 🐶 Stuart Beech 🐱 South Africa</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+
+</html>
